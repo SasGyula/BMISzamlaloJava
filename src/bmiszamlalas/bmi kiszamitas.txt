@@ -1,0 +1,28 @@
+main{
+	bmiIndex();
+}
+bmiIndex{
+	t = testmagasság(165);
+	m = testsúlyt(75);
+	bmiErtek = bmiKiszamitas(t,m);
+	boolean tulsuly = túlsúlyos(bmiErtek);
+	kiiras(m, t , bmiErtek, tulsuly);
+}
+
+bmiIndex - itt futnak le a metódusok és itt inicializalunk
+
+bmi kiszamitas- vár egy testsúlyt és egy magasságot méterben és visszatér egy double értékkel
+	double t = (double) t
+	double m = (double) m
+	double bmi = t / Math.Pow(m)
+	return bmi;
+
+testmagasság - egy int értéket kér visszatér egy double értékkel
+
+testtömeg - egy int értéket kér és azzal tér vissza
+
+túlsúlyos - vár egy bmi indexet és visszatér egy logikai értékkel
+
+kiirás ami vár egy testsúlyt, testtömeget, bmi indexet és egy logikai értéket
+
+
